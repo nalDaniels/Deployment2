@@ -31,8 +31,8 @@ I created IAM roles to allow Elastic Beanstalk to set up the necessary applicati
 #### b. Configuring the Environment
 Similar to past deployments, we used the created IAM role to allow EB to provision the infrastructure. I also selected the default VPC and an availability zone. I also configured the storage to be a General SSD with a volume of 10GB.
 
-# Successful Deployment
+## Successful Deployment
 <img width="1118" alt="Deployment 2 Success" src="https://github.com/nalDaniels/Deployment2/assets/135375665/ae471aaf-43eb-492b-999b-88b300750c27">
 
-# Resources
-Attached here please find my CI/CD Pipeline for this deployment
+## Resources
+Attached here please find my CI/CD Pipeline for this deployment: https://github.com/nalDaniels/Deployment2/blob/main/CICDPipeline.md
