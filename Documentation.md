@@ -1,5 +1,6 @@
 # Purpose:
 To familiarize myself with setting up a Jenkins server on an EC2 and manually deploying to AWS Elastic Beanstalk. In past deployments, we connected to a pre-configured Jenkins server.
+Using AWS Elastic Beanstalk helps me understand what types of infrastructure are required to run an application. 
 
 ## Steps to Production
 ### 1. Provision a Jenkins Server
