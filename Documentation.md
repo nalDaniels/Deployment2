@@ -5,7 +5,7 @@ Using AWS Elastic Beanstalk helps me understand what types of infrastructure are
 ## Steps to Production
 ### 1. Provision a Jenkins Server
 #### a. Goal
-Create Jenkins server in our EC2 instance to execute our pipeline steps/ 
+Create Jenkins server in our EC2 instance to execute our pipeline steps. 
 #### b. Optimization
 I created a bash script that updated and upgraded the Ubuntu repository and software and installed Jenkins and python3.10-venv. The latter created a virtual environment with its dependencies to run the application code.  
 #### c. Issues
