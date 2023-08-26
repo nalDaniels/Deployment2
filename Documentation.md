@@ -20,7 +20,8 @@ The build stage downloaded the packages specified in the requirements file neces
 ### 3. Unzipping the File
 #### a. Process
 I navigated to the EC2 hosting the Jenkins server and went to that destination. 
-I installed unzip on the EC2 and then unzipped the file with the command unzip.
+I installed unzip on the EC2 and then unzipped the file with the command unzip. I also scp'd the zipped file from my EC2 instance onto my local machine with this command scp ubuntu@ec2-54-197-210-199.compute-1.amazonaws.com:/var/lib/jenkins/workspace/Deployment2/build/1.0.0.1.zip ~/Documents
+
 #### b. Contents
 The contents were the original application files from the GitHub repository, the results file from the test, a cache folder, which I believe has a copy of the code in a different language understandable by the machine or program, and the dependencies necessary to build and test the code.
 #### c. Optimization
