@@ -24,7 +24,7 @@ I installed unzip on the EC2 and then unzipped the file with the command unzip.
 #### b. Contents
 The contents were the original application files from the GitHub repository, the results file from the test, a cache folder, which I believe has a copy of the code in a different language understandable by the machine or program, and the dependencies necessary to build and test the code.
 #### c. Optimization
-Since the Jenkins pipeline zipped the application files, you could pass it to the AWS Elastic Beanstalk to deploy the application via a plugin. The additional files Jenkins created would not cause a problem because they are likely not called by any of the code. 
+Since the Jenkins pipeline zipped the application files, you could pass it to the AWS Elastic Beanstalk to deploy the application via a plugin instead of manually zipping the files from the Github repository. The additional files Jenkins created would not cause a problem because they are likely not called by any of the code. 
 
 ### 4. Manually Deploy to AWS Elastic Beanstalk
 #### a. Creating IAM Roles
