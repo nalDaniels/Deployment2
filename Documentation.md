@@ -7,7 +7,7 @@ Using AWS Elastic Beanstalk helps me understand what types of infrastructure are
 #### a. Goal
 Create Jenkins server in our EC2 instance to execute our pipeline steps. 
 #### b. Optimization
-I created a bash script that updated and upgraded the Ubuntu repository and software and installed Jenkins and python3.10-venv. The latter created a virtual environment with its dependencies to run the application code.  
+I created a bash script that updated and upgraded the Ubuntu repository and software and installed Jenkins and python3.10-venv. The latter created a virtual environment with dependencies to run the application code.  Here is the Jenkins script: https://github.com/nalDaniels/Deployment2/blob/main/jenkinsscript.sh
 #### c. Issues
 I encountered an issue installing the 'Pipeline Utility Steps' via the command line. I resolved the problem by installing the plugin on the Jenkins GUI. This plugin allows Jenkins to interact with the application files, in this case, compressing them.
 
