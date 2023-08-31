@@ -1,6 +1,6 @@
 # Purpose:
 To familiarize myself with setting up a Jenkins server on an EC2 and manually deploying to AWS Elastic Beanstalk. In past deployments, we connected to a pre-configured Jenkins server.
-Using AWS Elastic Beanstalk helps me understand what types of infrastructure are required to run an application. 
+Using AWS Elastic Beanstalk helps me understand what types of infrastructure are required to run an application.
 
 ## Steps to Production
 ### 1. Provision a Jenkins Server
@@ -25,7 +25,7 @@ I installed unzip on the EC2 and then unzipped the file with the command unzip. 
 #### b. Contents
 The contents were the original application files from the GitHub repository, the results file from the test, a cache folder, which I believe has a copy of the code in a different language understandable by the machine or program, and the dependencies necessary to build and test the code.
 #### c. Optimization
-Since the Jenkins pipeline zipped the application files, you could pass it to the AWS Elastic Beanstalk to deploy the application via a plugin instead of manually zipping the files from the Github repository. The additional files Jenkins created would not cause a problem because they are likely not called by any of the code. 
+Since the Jenkins pipeline zipped the application files, you could pass it to the AWS Elastic Beanstalk to deploy the application via a plugin instead of manually zipping the files from the Github repository. The additional files Jenkins created would not cause a problem because they are likely not called by any of the code. Deploying the files zipped by Jenkins ensures that we are using versions of code that have been successfully built and tested.
 
 ### 4. Manually Deploy to AWS Elastic Beanstalk
 #### a. Creating IAM Roles
